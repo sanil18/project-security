@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checker.css">
+    <link rel="icon" href="img/password.png" type="image/png">
+    <title>Password Strength and Data Breach Checker</title>
+    
+</head>
+<body>
+
+    <section id="pwgen">
+        <h2>Password Strength and Data Breach Checker</h2>
+        <p>The Secure Password Generator is a powerful and user-friendly tool designed to enhance your online security. The generator employs advanced algorithms to create passwords that are not only complex but also tailored to meet the stringent security requirements of modern online platforms. Enjoy the peace of mind that comes with knowing your digital assets are safeguarded by robust and unpredictable passwords, all thanks to the simplicity and effectiveness of the Secure Password Generator.</p>
+        <p>In addition to fortifying your passwords, the Password Data Breach Checker serves as a crucial ally in safeguarding your online identity. This tool systematically scans your passwords against known data breaches, promptly alerting you if any of your credentials have been compromised. Stay informed about potential security risks and take proactive measures to secure your accounts. Empower yourself with the Password Data Breach Checker to ensure that your passwords remain uncompromised, providing a robust defense for your online presence.</p>
+        </section>
+
+
+        <div class="container">
+            <h2>Password Strength Checker</h2>
+            <label for="password">Enter Your Password:</label>
+            <div style="position: relative;">
+                <input type="password" id="password" name="password" oninput="togglePasswordButton('password', 'toggle-text')">
+                <span style="cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); right: 5px; display: none;" id="toggle-text" onclick="togglePasswordVisibility('password', 'toggle-text')">Show</span>
+            </div>
+    
+            <button onclick="checkPasswordStrength()">Check Strength</button>
+            <div id="strength-result" class="password-strength">
+                <span class="label">Strength: </span>
+                <span id="strength-text">Weak</span>
+            </div>
+    
+            <p id="strength-note" class="note">Note: Having a strong password is crucial for protecting your personal information and accounts from unauthorized access.</p>
+    
+            <h2>Data Breach Checker</h2>
+            <label for="password-data-breach">Enter your password:</label>
+            <div style="position: relative;">
+                <input type="password" id="password-data-breach" oninput="togglePasswordButton('password-data-breach', 'toggle-text-breach')">
+                <span style="cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); right: 5px; display: none;" id="toggle-text-breach" onclick="togglePasswordVisibility('password-data-breach', 'toggle-text-breach')">Show</span>
+            </div>
+    
+            <button onclick="checkDataBreach()">Check Data Breach</button>
+            <p id="result-breach" class="breach-result"></p>
+        </div>
+
+      
+
+    <script src="combined.js"></script>
+
+    <nav>
+        <a href="index.html">Go Back to Home</a>
+        <style>
+            a {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+      
+            }
+        </style>
+    </nav>
+    
+
+      
+      <br>
+      <footer> <hr>
+        <p>&copy; 2023 PassGenHub. All rights reserved.</p>
+    </footer>
+    
+</body>
+</body>
+</html>

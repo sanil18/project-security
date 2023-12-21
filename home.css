@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #001f3f; 
+    color: #fff; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #001f3f; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 15px; 
+}
+
+nav {
+    margin-left: auto; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border: 1px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #001f3f;
+}
+
+h2 {
+    color: #4CAF50;
+    margin: 25;
+}
+
+#starter {
+    line-height: 1.5;
+    margin-top: 20px; 
+    max-width: 800px; 
+    text-align: justify; 
+    align-self: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+
+#offers {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#offers {
+    max-width: 1000px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.col-md-4 {
+    flex: 0 0 calc(33.3333% - 20px); 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f8f9fa; 
+    border: 1px solid #dee2e6; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-body {
+    padding: 30px; 
+}
+
+.card-title {
+    color: #4CAF50;
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+}
+
+.card-text {
+    color: #495057;
+    font-size: 1.1em; 
+    line-height: 1.4; 
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px; 
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.btn-primary:hover {
+    background-color: #45a049; 
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #d7cece;
+}

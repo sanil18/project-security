@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/password.png" type="image/png">
+    <title>PassGenHub - Secure Password Generator</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to PassGenHub!</h1>
+        <p>Your destination for creating strong and secure passwords effortlessly. Generate unique and complex passwords tailored to your needs with our Secure Password Generator. Assess and strengthen existing passwords using our Password Strength Enhancer. Your online security is our top priority!. Explore features, generate secure passwords, and enhance existing ones with PassGenHub. Navigate the digital world with confidence. Your peace of mind is just a click away.</p>
+    </header>
+    
+
+
+    <main>
+        <section id="generator">
+        <h2><strong style="font-size: 20px;">Secure Password Generator</strong></h2> <br> <br>
+            <label for="passwordLength">Password Length:</label>
+            <input type="number" id="passwordLength" min="8" max="64" value="12">
+        </section>
+
+        <section>
+            <label for="includeUppercase">Include Uppercase:</label>
+            <input type="checkbox" id="includeUppercase">
+        </section>
+
+        <section>
+            <label for="includeNumbers">Include Numbers:</label>
+            <input type="checkbox" id="includeNumbers">
+        </section>
+
+        <section>
+            <label for="includeSpecialChars">Include Special Characters:</label>
+            <input type="checkbox" id="includeSpecialChars">
+        </section>
+
+        <button onclick="generatePassword()">Generate Password</button> <br>
+
+        <section>
+            <label for="generatedPassword">Generated Password:</label>
+            <input type="text" id="generatedPassword" readonly>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        </section>
+    </main>
+
+    <section id="enhancer">
+        <h2>Password Strength Enhancer</h2>
+        <label for="inputPassword">Enter your password:</label>
+        <input type="password" id="inputPassword">
+        <button onclick="enhancePassword()">Enhance Password</button>
+        <p id="output"></p>
+    </section>
+
+    <nav>
+        <a href="index.html">Go Back to Home</a>
+        <style>
+            a {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+      
+            }
+        </style>
+    </nav>
+
+   
+    <footer>
+        <hr>
+        <p>&copy; 2023 PassGenHub. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="pwgenerator.js"></script>
+</body>
+</html>
